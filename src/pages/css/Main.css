@@ -1,0 +1,47 @@
+.input_box{
+    width: 150px;
+    height: 20px;
+}
+
+.ans_input_box{
+    width: 80%;
+    height: 150px;
+}
+
+.btn_box{
+    width: 100%;
+    display: flex;
+    justify-content : center;
+}
+
+.guide{
+    overflow : hidden;
+    text-overflow : ellipsis;
+    width: 80%;
+    height: 45px;
+    word-wrap : brek-word; 
+    display : -webkit-box;
+    -webkit-line-clamp : 2;
+    -webkit-box-orient: vertical; 
+}
+
+.ans_tmp{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+}
+
+.question{
+    width: 80%;
+    margin: 10px;
+}
+
+.Question_tmp{
+    width: 80%;
+    margin: 10px;
+}
+
+.better_ans{
+    width: 70%;
+    margin: 10px;
+}
