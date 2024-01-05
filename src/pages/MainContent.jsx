@@ -9,10 +9,6 @@ const MainContent = () => {
     const dispatch = useDispatch();
     const [job, setJob] = useState("");
 
-    const onChange = (e) => {
-       setJob(e.target.value);
-    };
-
     const play = () => {
         dispatch({type: "JOB", payload: job})
         navigate('/interview');
@@ -24,7 +20,7 @@ const MainContent = () => {
             <h7>면접을 볼 직무를 입력하세요.<br />ex. 주니어 백앤드 개발자</h7>
         </div>
 
-        <input className="input_box" onChange={onChange}/> 
+        <input className="input_box" onChange= (e) => { setJob(e.target.value)}/> 
 
         <Button name="면접 보기" onClick={play} inputLen={job.length} />
         </>
