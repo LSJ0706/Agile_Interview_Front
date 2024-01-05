@@ -17,16 +17,14 @@ const InterviewPage = (props) => {
     navigate('/better');
   }
 
-  const onChange = (e) => {
-    setAnswer(e.target.value);
-}; 
-
     return (
         <>
         {props.question.length === 0 ? 
         <div> <Spinner /> </div> : 
         <div className="question"> {props.question} </div>}
-        <textarea className="ans_input_box" onChange={onChange}/>
+        <textarea className="ans_input_box" onChange=(e) => {
+    setAnswer(e.target.value);
+}/>
         <Button name="확인" onClick={onClick} inputLen = {answer.length}/>
         
         </>
